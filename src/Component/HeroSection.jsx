@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import Blob from "./blob"
-import { text } from "framer-motion/client"
+import Blob from "./Blob"
 
 export const HeroSection = () => {
   const texts = [
