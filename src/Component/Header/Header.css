@@ -1,0 +1,15 @@
+@media screen and (max-width: 479px) {
+    .desktop-NavBtn{
+        display: none;
+    }
+    .downloadbtn{
+        display: none;
+    }
+    .header {
+        padding-top:1rem;
+        padding-bottom: 1rem;
+    }
+    .mobile-NavBtn{
+        display: block;
+    }
+}
