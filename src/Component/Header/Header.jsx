@@ -9,6 +9,21 @@ export default function Header() {
   const [showDownload, setShowDownload] = useState(false);
   const [showSlider, setShowSlider] = useState(false)
 
+     const handleScroll = (targetId) => {
+    if (!targetId) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+    const targetElement = document.querySelector(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center',
+      });
+    }
+  };
+
+
   useEffect(() => {
     if (showDownload) {
       const timeout = setTimeout(() => setShowDownload(false), 2000);
@@ -25,15 +40,15 @@ export default function Header() {
     >
       <div className="flex px-4 lg:px-7 items-center justify-between">
         {/* Logo/Title */}
-        <span className="text-xl lg:text-2xl text-white font-bold">PORTFOLIO</span>
+        <span onClick={()=>handleScroll()} className="text-xl lg:text-2xl text-white font-bold caret-transparent cursor-pointer">PORTFOLIO | Sumit Kumar</span>
 
         {/* Desktop Nav */}
         <nav className="hidden lg:flex gap-14 desktop-NavBtn">
           {['About', 'Projects', 'Skills', 'Contact'].map((item) => (
             <a
               key={item}
-              href={`#${item.toLowerCase()}`}
-              className="relative text-white/80 text-xl hover:text-white transition-colors duration-300 group hover:drop-shadow-[0_0_8px_rgba(236,72,153,0.8)]"
+             onClick={()=>handleScroll(`#${item}`)}
+              className="relative text-white/80 text-xl hover:text-white transition-colors duration-300 group hover:drop-shadow-[0_0_8px_rgba(236,72,153,0.8)] cursor-pointer caret-transparent"
             >
               <span>{item}</span>
               <div className="absolute -bottom-1 left-0 w-0 h-[2px] bg-gradient-to-r from-purple-400 to-pink-400 group-hover:w-full transition-all duration-300"></div>

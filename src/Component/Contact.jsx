@@ -30,7 +30,7 @@ const ColorForIcon = [ "#FCD34D","#3B82F6","#22C55E"]
 
 
   return (
-    <div className="relative w-full text-white flex flex-col items-center justify-center lg:px-28 px-6 mt-32 mb-20 space-y-16">
+    <div id='Contact' className="relative w-full text-white flex flex-col items-center justify-center lg:px-28 px-6 mt-32 mb-20 space-y-16">
       
 
       {/* Section Heading */}

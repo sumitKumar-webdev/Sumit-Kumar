@@ -59,7 +59,7 @@ export default function Skills() {
   ];
 
   return (
-    <div className="w-full text-white flex flex-col items-center justify-center lg:px-28 px-6 mt-20">
+    <div id="Skills" className="w-full text-white flex flex-col items-center justify-center lg:px-28 px-6 mt-20">
       <div className=" w-full mb-6 flex items-center">
         <h2 className="font-bold text-2xl lg:text-4xl z-10 relative">
           Tech Stack
