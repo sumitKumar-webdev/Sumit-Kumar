@@ -5,6 +5,7 @@ export default function Contact() {
   const [showSlide, setShowSlide] = useState();
   const [isMobile, setIsMobile] = useState(false);
 
+
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768); // Tailwind's `md` breakpoint
@@ -59,16 +60,19 @@ export default function Contact() {
             <input
               type="text"
               placeholder="Name"
+              required
               className="flex-1 px-5 py-3 border border-white/10 bg-white/5 text-white rounded-lg placeholder:text-white/40 focus:outline-none focus:ring-1 focus:ring-purple-600 backdrop-blur"
             />
             <input
               type="email"
+              required
               placeholder="Email"
               className="flex-1 px-5 py-3 border border-white/10 bg-white/5 text-white rounded-lg placeholder:text-white/40 focus:outline-none focus:ring-1 focus:ring-purple-600 backdrop-blur"
             />
           </div>
           <textarea
             rows="6"
+            required
             name='Message'
             placeholder="Your message..."
             className="w-full px-5 py-3 border border-white/10 bg-white/5 text-white rounded-lg placeholder:text-white/40 focus:outline-none focus:ring-1 focus:ring-purple-600 resize-none backdrop-blur"
