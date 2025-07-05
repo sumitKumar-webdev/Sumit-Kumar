@@ -26,7 +26,7 @@ export default function Skills() {
     },
     {
       name: "React Router",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/d/dc/React_Router_logo.svg", // unofficial
+      logo: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA6klEQVR4Ae2WAQbDMBSGd4ZCADtBAQYGRlcYdpSxm+wCPUEB6CECVC9RFDMA3v4QRPw0kzXZCD4gzfvey3tNdu3tkpUiUASKQNTHr9P1aMgigMALEMuSVAABOyAeXUqBiQhMuSsgqXtgJBLDJgJVVfVAg4cnsbeTMHgiY2hPhAR/AnHQbB2RCJqOteANEIIiAgcghHNugfa/jgABaqC+3YRmT1AzAXfB7GTax4whSUAsM1BMQJOzvsf+iMweZF/NBITQf5D9uJq9wxYV6GIroPiiyOuYJ+f0AJ/9OvpBwqerKW/CIlAEfk7gDX41k/wjplEbAAAAAElFTkSuQmCC",
     },
     {
       name: "Tailwind CSS",
@@ -50,11 +50,11 @@ export default function Skills() {
     },
     {
       name: "Framer Motion",
-      logo: "https://seeklogo.com/images/F/framer-motion-logo-DA1E33CAA1-seeklogo.com.png", // custom
+      logo: "https://seeklogo.com/images/F/framer-motion-logo-DA1E33CAA1-seeklogo.com.png",
     },
     {
       name: "GSAP",
-      logo: "https://greensock.com/uploads/monthly_2020_03/greensock-logo.svg.5d9c3f76e0ef14c934a220b2395dc7d9.svg", // from GSAP site
+      logo: "https://cdn.worldvectorlogo.com/logos/gsap-greensock.svg",
     },
   ];
 

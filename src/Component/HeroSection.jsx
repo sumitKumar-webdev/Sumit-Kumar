@@ -3,13 +3,27 @@ import { motion, AnimatePresence } from "framer-motion"
 import Blob from "./Blob.jsx"
 
 export const HeroSection = () => {
+  const [index, setIndex] = useState(0);
   const texts = [
     'FullStack',
     'MERN Stack',
     'Creative',
     'UI-UX'
   ]
-   const [index, setIndex] = useState(0);
+  const handleScroll = (targetId) => {
+    if (!targetId) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+    const targetElement = document.querySelector(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center',
+      });
+    }
+  };
+
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -68,14 +82,16 @@ export const HeroSection = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
           >
             <motion.button
+            onClick={()=>handleScroll('#Projects')}
               whileHover={{ scale: 1.05, boxShadow: "0 0 15px rgba(59,130,246,0.5)" }}
-              className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-full transition-all duration-300"
+              className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-full transition-all duration-300 cursor-pointer"
             >
               View My Work
             </motion.button>
             <motion.button
+             onClick={()=>handleScroll('#Contact')}
               whileHover={{ scale: 1.05 }}
-              className="px-8 py-4 border-2 border-gray-600 text-gray-300 font-semibold rounded-full hover:border-white hover:text-white transition-all duration-300"
+              className="px-8 py-4 border-2 border-gray-600 text-gray-300 font-semibold rounded-full hover:border-white hover:text-white transition-all duration-300 cursor-pointer"
             >
               Get In Touch
             </motion.button>
