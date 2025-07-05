@@ -4,17 +4,30 @@ import Blob from "./Blob.jsx"
 
 export const HeroSection = () => {
   const [index, setIndex] = useState(0);
+    const [isMobile, setIsMobile] = useState(false);
+  
+    useEffect(() => {
+      const handleResize = () => {
+        setIsMobile(window.innerWidth < 768); // Tailwind's `md` breakpoint
+      };
+      handleResize(); // Initial check
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
   const texts = [
     'FullStack',
     'MERN Stack',
     'Creative',
     'UI-UX'
   ]
+
   const handleScroll = (targetId) => {
     if (!targetId) {
       window.scrollTo({ top: 0, behavior: 'smooth' });
       return;
     }
+
     const targetElement = document.querySelector(targetId);
     if (targetElement) {
       targetElement.scrollIntoView({
@@ -23,7 +36,6 @@ export const HeroSection = () => {
       });
     }
   };
-
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -108,7 +120,7 @@ export const HeroSection = () => {
             <Blob className="opacity-100 lg:h-[500px]" />
         </motion.div>
       </div>
-      <div className="absolute bottom-0 w-full h-20 bg-gradient-to-b from-transparent to-black/95 z-0" />
+      {!isMobile && <div className="absolute bottom-0 w-full h-20 bg-gradient-to-b from-transparent to-black/95 z-0" />}
     </div>
   )
 }

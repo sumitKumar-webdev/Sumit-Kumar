@@ -42,7 +42,7 @@ const projects = [
 
 
   return (
-    <div id="Projects" className="w-full flex flex-col items-center justify-center lg:px-28 px-6 mt-20 space-y-8">
+    <div id="Projects" className="w-full flex flex-col items-center justify-center lg:px-28 px-6 mt-28 space-y-8">
       {/* Section Heading */}
       <div className=" w-full mb-6 flex items-center">
         <h2 className="font-bold text-white text-2xl lg:text-4xl z-10 relative">

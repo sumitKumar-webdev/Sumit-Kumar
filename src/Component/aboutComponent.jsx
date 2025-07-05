@@ -24,7 +24,7 @@ export  function aboutComponent() {
 
 
   return (
-  <div id='About' className="w-full h-dvh bg-transparent text-white flex items-center justify-center lg:px-28 px-14 flex-col mt-[6rem]">
+  <div id='About' className="w-full h-dvh bg-transparent text-white flex items-center justify-center lg:px-28 px-14 flex-col mt-[4rem]">
 
     {/* text heading */}
     <div className='lg:mb-28 mb-14 w-full flex relative items-center'>
