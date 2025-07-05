@@ -86,7 +86,10 @@ export default function Skills() {
              shadow-[0_0_40px_10px_rgba(168,85,247,0.2)]"
       /> 
 
-     
+     <span className="text-center mt-20 text-lg lg:text-2xl text-gray-300 italic">
+  Learning by doing — it’s how I grow as a developer.
+</span>
+
     </div>
   );
 }

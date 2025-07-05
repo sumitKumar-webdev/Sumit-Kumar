@@ -40,7 +40,7 @@ export default function Header() {
     >
       <div className="flex px-4 lg:px-7 items-center justify-between">
         {/* Logo/Title */}
-        <span onClick={()=>handleScroll()} className="text-xl lg:text-2xl text-white font-bold caret-transparent cursor-pointer">PORTFOLIO | Sumit Kumar</span>
+        <span onClick={()=>handleScroll()} className="lg:text-2xl text-white font-bold caret-transparent cursor-pointer">PORTFOLIO | Sumit Kumar</span>
 
         {/* Desktop Nav */}
         <nav className="hidden lg:flex gap-14 desktop-NavBtn">

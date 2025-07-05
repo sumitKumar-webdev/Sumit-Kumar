@@ -6,8 +6,8 @@
         display: none;
     }
     .header {
-        padding-top:1rem;
-        padding-bottom: 1rem;
+        padding-top:0.6rem;
+        padding-bottom: 0.6rem;
     }
     .mobile-NavBtn{
         display: block;

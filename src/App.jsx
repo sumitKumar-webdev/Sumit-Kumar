@@ -15,13 +15,15 @@ function App() {
   return (
     <>
     <Header />
-    <div className="relative min-h-dvh overflow-hidden bg-gradient-to-br from-gray-900 via-black to-gray-900 ">
+    <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-gray-900 via-black to-gray-900 ">
     <FloatingParticals />
+    <main className='flex flex-col gap-32 mx-auto'>
     <HeroSection />    
     <About />
     <Project />
     <Skills />
     <Contact />
+    </main>
     </div>
    
 

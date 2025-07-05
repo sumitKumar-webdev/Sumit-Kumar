@@ -24,7 +24,7 @@ export  function aboutComponent() {
 
 
   return (
-  <div id='About' className="w-full h-dvh bg-transparent text-white flex items-center justify-center lg:px-28 px-14 flex-col mt-[4rem]">
+  <div id='About' className="w-full bg-transparent text-white flex items-center justify-center lg:px-28 px-14 flex-col">
 
     {/* text heading */}
     <div className='lg:mb-28 mb-14 w-full flex relative items-center'>
@@ -34,11 +34,39 @@ export  function aboutComponent() {
 
   {/* Centered Flex Container */}
   <div className="flex lg:flex-row flex-col items-start justify-between gap-10 w-full">
-    
-    {/* Left Column: Text */}
-    <span className="lg:text-left lg:w-1/2 lg:text-lg text-justify tracking-widest leading-relaxed">
-     I'm a passionate programmer from Delhi, India, always looking for new challenges to push my limits and grow as a developer. I enjoy working in collaborative environments where I can learn from others and contribute my skills to solve real-world problems. Alongside coding, I have a strong interest in trading and love exploring financial markets. It helps me think analytically and stay focused under pressure. In my free time, I like reading books, watching movies, and playing video games to relax and recharge. I'm always open to learning something new and connecting with people who share a passion for tech and innovation.
-    </span>
+<span className="lg:text-left lg:w-1/2 lg:text-lg text-justify tracking-widest leading-relaxed">
+  I'm a passionate developer from{" "}
+  <motion.span
+     initial={{ backgroundSize: '0% 100%' }}
+  whileInView={{ backgroundSize: '100% 100%' }}
+  transition={{ duration: 0.5, ease: 'easeOut', delay: 0.4 }}
+  viewport={{ once: true, amount: 0.5 }}
+  className="inline-block px-1 text-white font-medium rounded bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-no-repeat bg-left bg-[length:0%_100%]"
+  >
+    Delhi India,
+  </motion.span>
+     always eager to learn and build meaningful solutions and a better{" "}
+  <motion.span
+    initial={{ backgroundSize: '0% 100%' }}
+  whileInView={{ backgroundSize: '100% 100%' }}
+  transition={{ duration: 0.5, ease: 'easeOut', delay: 0.4 }}
+  viewport={{ once: true, amount: 0.5 }}
+  className="inline-block px-1 text-white font-medium rounded bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-no-repeat bg-left bg-[length:0%_100%]"
+  >
+    user experience.
+  </motion.span>
+   I enjoy working in collaborative environments and exploring new challenges in tech. Outside of coding, I love spending time watching movies, business documentaries, and{" "}
+<motion.span
+  initial={{ backgroundSize: '0% 100%' }}
+  whileInView={{ backgroundSize: '100% 100%' }}
+  transition={{ duration: 0.5, ease: 'easeOut', delay: 0.4 }}
+  viewport={{ once: true, amount: 0.5 }}
+  className="inline-block px-1 text-white font-medium rounded bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-no-repeat bg-left bg-[length:0%_100%]"
+>
+  playing games.
+</motion.span>
+</span>
+
 
     {/* Right Column */}
 
