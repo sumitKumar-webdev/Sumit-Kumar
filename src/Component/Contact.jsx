@@ -55,7 +55,7 @@ export default function Contact() {
       {/* Content Layout */}
       <div className="flex flex-col lg:flex-row gap-10">
         {/* Form */}
-        <form method='POST' action={"https://formsubmit.co/sumitkr8178@gmail.com"} className="flex flex-col gap-6 w-full max-w-xl">
+        <form method='POST' action={"https://formsubmit.co/0cf47cbfb8568f967c89be8e6a1bddbd"} className="flex flex-col gap-6 w-full max-w-xl">
           <div className="flex flex-col lg:flex-row gap-4">
             <input
               type="text"
