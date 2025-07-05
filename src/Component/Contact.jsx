@@ -17,19 +17,19 @@ export default function Contact() {
   const socialLinks = [
     {
       name: "GitHub",
-      url: "https://github.com/your-username",
+      url: "https://github.com/sumitKumar-webdev",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
       color: "#6B7280",
     },
     {
       name: "LinkedIn",
-      url: "https://www.linkedin.com/in/your-profile",
+      url: "https://www.linkedin.com/in/sumitkumar-webdev/",
       logo: "https://images.vexels.com/media/users/3/131245/isolated/preview/9351735cd3a456e88ad876588ab9e503-linkedin-logo.png",
       color: "#1E3A8A",
     },
     {
       name: "Twitter",
-      url: "https://twitter.com/your-handle",
+      url: "https://twitter.com/@Sumit_kumar81",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg",
       color: "#8B5CF6",
     },
