@@ -54,7 +54,7 @@ export default function Contact() {
       {/* Content Layout */}
       <div className="flex flex-col lg:flex-row gap-10">
         {/* Form */}
-        <form className="flex flex-col gap-6 w-full max-w-xl">
+        <form method='POST' action={"https://formsubmit.co/sumitkr8178@gmail.com"} className="flex flex-col gap-6 w-full max-w-xl">
           <div className="flex flex-col lg:flex-row gap-4">
             <input
               type="text"
@@ -69,6 +69,7 @@ export default function Contact() {
           </div>
           <textarea
             rows="6"
+            name='Message'
             placeholder="Your message..."
             className="w-full px-5 py-3 border border-white/10 bg-white/5 text-white rounded-lg placeholder:text-white/40 focus:outline-none focus:ring-1 focus:ring-purple-600 resize-none backdrop-blur"
           />
