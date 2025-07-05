@@ -36,6 +36,7 @@ export default function Header() {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
+      id='Header'
       className="fixed top-0 left-0 z-50 w-full bg-white/10 backdrop-blur-md py-3 px-4 header"
     >
       <div className="flex px-4 lg:px-7 items-center justify-between">
