@@ -23,7 +23,7 @@ export default function DownloadBtn() {
       </button>
 
       <a
-        href="/Sumit Kumar-Resume.pdf"
+        href="/Sumit_Kumar_Resume.pdf"
         download="Sumit Kumar Resume.pdf"
         className="absolute inset-0 z-20"
         aria-label="Download Resume"
