@@ -5,7 +5,7 @@ export default function DownloadBtn() {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div className="relative inline-block group focus-within:ring-2 focus-within:ring-pink-400 rounded-full">
+    <div title="Download Resume" className="relative inline-block group focus-within:ring-2 focus-within:ring-pink-400 rounded-full">
       {/* Styled button layer */}
       <button
         onMouseEnter={() => setIsHovered(true)}
