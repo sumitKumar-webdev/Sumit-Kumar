@@ -62,7 +62,7 @@ export default function Header() {
         </div>
 
         {/* Hamburger Menu Toggle (visible on small screens) */}
-        <div className="lg:hidden z-50">
+        <div className="lg:hidden cursor-pointer z-50">
          {!showSlider && <LucideMenu color='white' size={40} onClick={() => setShowSlider(!showSlider)}/>} 
         </div>
       </div>
@@ -89,7 +89,7 @@ export default function Header() {
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
-              onClick={() => setShowSlider(false)}
+              onClick={() =>{ setShowSlider(false), handleScroll(`#${item}`)}}
               className="hover:text-pink-500 font-semibold transition-colors"
             >
               {item}
