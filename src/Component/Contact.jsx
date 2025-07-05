@@ -75,6 +75,7 @@ export default function Contact() {
           />
           <button
             type="submit"
+            title='Send Message'
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
             className={`px-6 py-3 rounded-lg font-semibold transition-all duration-500 shadow-md ${
@@ -90,7 +91,7 @@ export default function Contact() {
         {/* Social Links */}
         <section className="flex lg:flex-col items-start lg:items-center gap-6">
           {socialLinks.map((item, index) => (
-            <div key={index} className="relative w-16 h-16">
+            <div title={item.name} key={index} className="relative w-16 h-16">
               <a
                 onMouseEnter={() => !isMobile && setShowSlide(index)}
                 onMouseLeave={() => !isMobile && setShowSlide()}

@@ -94,6 +94,7 @@ export const HeroSection = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
           >
             <motion.button
+            title="View My Work"
             onClick={()=>handleScroll('#Projects')}
               whileHover={{ scale: 1.05, boxShadow: "0 0 15px rgba(59,130,246,0.5)" }}
               className="px-8 py-3 lg:py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-full transition-all duration-300 cursor-pointer"
@@ -101,6 +102,7 @@ export const HeroSection = () => {
               View My Work
             </motion.button>
             <motion.button
+            title="Get In Touch"
              onClick={()=>handleScroll('#Contact')}
               whileHover={{ scale: 1.05 }}
               className="px-8 py-3 lg:py-4 border-2 border-gray-600 text-gray-300 font-semibold  rounded-full hover:border-white hover:text-white transition-all duration-300 cursor-pointer"
