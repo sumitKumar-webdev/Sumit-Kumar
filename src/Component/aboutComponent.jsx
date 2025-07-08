@@ -40,8 +40,8 @@ export  function aboutComponent() {
      initial={{ backgroundSize: '0% 100%' }}
   whileInView={{ backgroundSize: '100% 100%' }}
   transition={{ duration: 0.5, ease: 'easeOut', delay: 0.4 }}
-  viewport={{ once: true, amount: 0.5 }}
-  className="inline-block px-1 text-white font-medium rounded bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-no-repeat bg-left bg-[length:0%_100%]"
+  viewport={{ once: true, amount: 0.7 }}
+  className="inline-block px-1 text-white font-medium  bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-no-repeat bg-left bg-[length:0%_100%]"
   >
     Delhi India,
   </motion.span>
@@ -51,7 +51,7 @@ export  function aboutComponent() {
   whileInView={{ backgroundSize: '100% 100%' }}
   transition={{ duration: 0.5, ease: 'easeOut', delay: 0.4 }}
   viewport={{ once: true, amount: 0.5 }}
-  className="inline-block px-1 text-white font-medium rounded bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-no-repeat bg-left bg-[length:0%_100%]"
+  className="inline-block px-1 text-white font-medium  bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-no-repeat bg-left bg-[length:0%_100%]"
   >
     user experience.
   </motion.span>
@@ -61,7 +61,7 @@ export  function aboutComponent() {
   whileInView={{ backgroundSize: '100% 100%' }}
   transition={{ duration: 0.5, ease: 'easeOut', delay: 0.4 }}
   viewport={{ once: true, amount: 0.5 }}
-  className="inline-block px-1 text-white font-medium rounded bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-no-repeat bg-left bg-[length:0%_100%]"
+  className="inline-block px-1 text-white font-medium  bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-no-repeat bg-left bg-[length:0%_100%]"
 >
   playing games.
 </motion.span>

@@ -41,7 +41,7 @@ export const HeroSection = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-screen flex items-center justify-center  overflow-hidden">
+    <div className="relative w-full lg:h-screen lg:mb-0 flex items-center justify-center  overflow-hidden">
       {/* Content wrapper */}
       <div className="relative z-10 flex flex-col sm:pt-20 lg:flex-row items-center justify-around w-full max-w-7xl px-2 gap-12 lg:order-2 order-1">
         {/* Text Content */}
