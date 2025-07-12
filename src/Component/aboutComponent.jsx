@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { AnimatePresence, motion } from "framer-motion";
 
 export  function aboutComponent() {
-  const [openSlide, setOpenSlide] = useState({})
+  const [openSlide, setOpenSlide] = useState(1)
 
  const qualifications = [
   {
