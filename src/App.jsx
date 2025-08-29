@@ -7,7 +7,6 @@ import FloatingParticals from './Component/FloatingParticals'
 import Project from './Component/Project'
 import Skills from './Component/Skills'
 import Contact from './Component/Contact'
-import { Analytics } from "@vercel/analytics/next"
 
 
 function App() {
@@ -27,7 +26,6 @@ function App() {
     </main>
     </div>
    
-<Analytics/>
   </>
   )
 }
