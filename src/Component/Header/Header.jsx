@@ -10,15 +10,14 @@ export default function Header() {
   const [showSlider, setShowSlider] = useState(false);
 
   const handleScroll = (targetId) => {
-    if (!targetId) {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-      return;
-    }
     const targetElement = document.querySelector(targetId);
     if (targetElement) {
-      targetElement.scrollIntoView({
+      const elementPosition = targetElement.getBoundingClientRect().top;
+      const offset = window.innerHeight / 2 - targetElement.offsetHeight / 2;
+
+      window.scrollBy({
+        top: elementPosition - offset,
         behavior: "smooth",
-        block: "center",
       });
     }
   };
@@ -52,7 +51,11 @@ export default function Header() {
           {["About", "Projects", "Skills", "Contact"].map((item) => (
             <a
               key={item}
-              onClick={() => handleScroll(`#${item}`)}
+              href={`#${item}`}
+              onClick={(e) => {
+                e.preventDefault();
+                handleScroll(`#${item}`);
+              }}
               className="relative text-white/80 text-xl hover:text-white transition-colors duration-300 group hover:drop-shadow-[0_0_8px_rgba(236,72,153,0.8)] cursor-pointer caret-transparent"
             >
               <span>{item}</span>
