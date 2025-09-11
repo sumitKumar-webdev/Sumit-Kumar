@@ -1,28 +1,27 @@
-import React, { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
-import DownloadBtn from '../DownloadBtn';
-import HamburgerMenuButton from '../../AnimatedIcons/HemBurgerMenu';
-import './Header.css';
-import { LucideMenu, X } from 'lucide-react';
+import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import DownloadBtn from "../DownloadBtn";
+import HamburgerMenuButton from "../../AnimatedIcons/HemBurgerMenu";
+import "./Header.css";
+import { LucideMenu, X } from "lucide-react";
 
 export default function Header() {
   const [showDownload, setShowDownload] = useState(false);
-  const [showSlider, setShowSlider] = useState(false)
+  const [showSlider, setShowSlider] = useState(false);
 
-     const handleScroll = (targetId) => {
+  const handleScroll = (targetId) => {
     if (!targetId) {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.scrollTo({ top: 0, behavior: "smooth" });
       return;
     }
     const targetElement = document.querySelector(targetId);
     if (targetElement) {
       targetElement.scrollIntoView({
-        behavior: 'smooth',
-        block: 'center',
+        behavior: "smooth",
+        block: "center",
       });
     }
   };
-
 
   useEffect(() => {
     if (showDownload) {
@@ -36,19 +35,24 @@ export default function Header() {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
-      id='Header'
+      id="Header"
       className="fixed top-0 left-0 z-50 w-full bg-white/10 backdrop-blur-md py-3 px-4 header"
     >
       <div className="flex px-4 lg:px-7 items-center justify-between">
         {/* Logo/Title */}
-        <span onClick={()=>handleScroll()}  className="lg:text-2xl text-white font-bold caret-transparent cursor-pointer">PORTFOLIO | Sumit Kumar</span>
+        <span
+          onClick={() => handleScroll()}
+          className="lg:text-2xl text-white font-bold caret-transparent cursor-pointer"
+        >
+          PORTFOLIO | Sumit Kumar
+        </span>
 
         {/* Desktop Nav */}
         <nav className="hidden lg:flex gap-14 desktop-NavBtn">
-          {['About', 'Projects', 'Skills', 'Contact'].map((item) => (
+          {["About", "Projects", "Skills", "Contact"].map((item) => (
             <a
               key={item}
-             onClick={()=>handleScroll(`#${item}`)}
+              onClick={() => handleScroll(`#${item}`)}
               className="relative text-white/80 text-xl hover:text-white transition-colors duration-300 group hover:drop-shadow-[0_0_8px_rgba(236,72,153,0.8)] cursor-pointer caret-transparent"
             >
               <span>{item}</span>
@@ -64,7 +68,13 @@ export default function Header() {
 
         {/* Hamburger Menu Toggle (visible on small screens) */}
         <div className="lg:hidden cursor-pointer z-50">
-         {!showSlider && <LucideMenu color='white' size={40} onClick={() => setShowSlider(!showSlider)}/>} 
+          {!showSlider && (
+            <LucideMenu
+              color="white"
+              size={40}
+              onClick={() => setShowSlider(!showSlider)}
+            />
+          )}
         </div>
       </div>
 
@@ -80,17 +90,19 @@ export default function Header() {
       <div
         onClick={(e) => e.stopPropagation()}
         className={`fixed right-0 top-0 h-screen z-50 w-[80vw] max-w-sm flex flex-col bg-white/20 backdrop-blur-md transition-transform duration-300 ease-in-out ${
-          showSlider ? 'translate-x-0' : 'translate-x-full'
+          showSlider ? "translate-x-0" : "translate-x-full"
         }`}
       >
         <nav className="flex flex-col p-6 gap-6 backdrop text-lg text-white">
-          <X size={30} onClick={()=>setShowSlider(!showSlider)}/>
-          <div className='w-full h-[0.2px] bg-white'></div>
-          {['About', 'Projects', 'Skills', 'Contact'].map((item) => (
+          <X size={30} onClick={() => setShowSlider(!showSlider)} />
+          <div className="w-full h-[0.2px] bg-white"></div>
+          {["About", "Projects", "Skills", "Contact"].map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
-              onClick={() =>{ setShowSlider(false), handleScroll(`#${item}`)}}
+              onClick={() => {
+                setShowSlider(false), handleScroll(`#${item}`);
+              }}
               className="hover:text-pink-500 font-semibold transition-colors"
             >
               {item}

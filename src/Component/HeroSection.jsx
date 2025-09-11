@@ -117,7 +117,7 @@ export const HeroSection = () => {
           transition={{ delay: 0.6, duration: 0.8 }}
           className="relative z-20 flex bg-transparent order-1 lg:order-2"
         >
-          <Blob className="opacity-100 h-[400px] lg:h-[500px]" />
+          {/* <Blob className="opacity-100 h-[400px] lg:h-[500px]" /> */}
         </motion.div>
       </div>
     </div>
