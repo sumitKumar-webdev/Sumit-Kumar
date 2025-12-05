@@ -6,6 +6,22 @@ export default function Project() {
 
 const projects = [
   {
+    name: "ShareME",
+    description:
+      "A file sharing platform with 4 digit secure access code, without any sharing link or direct connection. Deployed on vercel and render",
+    url: "https://shareme-dun.vercel.app/",
+    img: "/6.JPG",
+    techStack: ["Next Js", "Node Js", "Express Js", "Redis", "Dockker", "Material Js", "MongoDb"],
+  },
+  {
+    name: "School Management System",
+    description:
+      "A scalable School Management platform build with a small team, with features like add, edit and delete entities. Deployed on vercel and render",
+    url: "https://edusphere-flax.vercel.app/",
+    img: "/7.JPG",
+    techStack: ["Next Js","Node Js", "Express Js", "Material Js", "MongoDb"],
+  },
+  {
     name: "Flour and Flavour",
     description:
       "A beautifully crafted bakery/cake website with cart functionality, custom messages per item, and Appwrite backend integration.",
@@ -20,15 +36,6 @@ const projects = [
     url: "https://github.com/sumitKumar-webdev/Title-Case-Chrome-Extention",
     img: "/1.webp",
     techStack: ["JavaScript", "HTML", "CSS", "Chrome APIs"],
-  },
-  {
-    name: "Offline-First Markdown Notes App",
-    description:
-      "A fullstack PWA (React + IndexedDB + Express) that lets users create, edit, and sync notes even without an internet connection. Currently under development.",
-    url: "#",
-    img: "/4.webp",
-    underDevlopment: true,
-    techStack: ["React", "IndexedDB", "Express.js", "Node.js", "PWA"],
   },
   {
     name: "Landing Page",
